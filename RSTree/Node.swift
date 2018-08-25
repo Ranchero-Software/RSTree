@@ -17,7 +17,7 @@ public final class Node: Hashable {
 	public var canHaveChildNodes = false
 	public var isGroupItem = false
 	public var childNodes = [Node]()
-	public let hashValue: Int
+	public let uniqueID: Int
 	private static var incrementingID = 0
 
 	public var isRoot: Bool {
@@ -60,7 +60,7 @@ public final class Node: Hashable {
 		self.representedObject = representedObject
 		self.parent = parent
 
-		self.hashValue = Node.incrementingID
+		self.uniqueID = Node.incrementingID
 		Node.incrementingID += 1
 	}
 	
@@ -166,13 +166,20 @@ public final class Node: Hashable {
 
 		return indexSetDictionary
 	}
+
+	// MARK: - Hashable
+
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(uniqueID)
+	}
+
+	// MARK: - Equatable
+
+	public class func ==(lhs: Node, rhs: Node) -> Bool {
+		return lhs === rhs
+	}
 }
 
-
-public func ==(lhs: Node, rhs: Node) -> Bool {
-	
-	return lhs === rhs
-}
 
 public extension Array where Element == Node {
 
