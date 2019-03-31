@@ -95,7 +95,7 @@ public final class Node: Hashable {
 
 	public func indexOfChild(_ node: Node) -> Int? {
 		
-		return childNodes.index{ (oneChildNode) -> Bool in
+		return childNodes.firstIndex{ (oneChildNode) -> Bool in
 			oneChildNode === node
 		}
 	}
@@ -183,7 +183,7 @@ public final class Node: Hashable {
 
 public extension Array where Element == Node {
 
-	public func representedObjects() -> [AnyObject] {
+	func representedObjects() -> [AnyObject] {
 
 		return self.map{ $0.representedObject }
 	}

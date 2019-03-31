@@ -11,7 +11,7 @@ import AppKit
 public extension NSOutlineView {
 
 	@discardableResult
-	public func revealAndSelectNodeAtPath(_ nodePath: NodePath) -> Bool {
+	func revealAndSelectNodeAtPath(_ nodePath: NodePath) -> Bool {
 
 		// Returns true on success. Expands folders on the way. May succeed partially (returns false, in that case).
 
@@ -44,7 +44,7 @@ public extension NSOutlineView {
 	}
 
 	@discardableResult
-	public func revealAndSelectRepresentedObject(_ representedObject: AnyObject, _ treeController: TreeController) -> Bool {
+	func revealAndSelectRepresentedObject(_ representedObject: AnyObject, _ treeController: TreeController) -> Bool {
 
 		guard let nodePath = NodePath(representedObject: representedObject, treeController: treeController) else {
 			return false
