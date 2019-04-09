@@ -6,6 +6,8 @@
 //  Copyright © 2016 Ranchero Software, LLC. All rights reserved.
 //
 
+#if os(OSX)
+
 import AppKit
 
 public extension NSOutlineView {
@@ -52,3 +54,5 @@ public extension NSOutlineView {
 		return revealAndSelectNodeAtPath(nodePath)
 	}
 }
+
+#endif

@@ -186,6 +186,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 842A0BD71CFCB9BC00BF746C;
@@ -252,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D511EF1E20242EC900712EC3 /* RSTree_project_debug.xcconfig */;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 			};
 			name = Debug;
 		};
@@ -259,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D511EF1F20242EC900712EC3 /* RSTree_project_release.xcconfig */;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 			};
 			name = Release;
 		};

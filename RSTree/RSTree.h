@@ -6,7 +6,7 @@
 //  Copyright © 2016 Ranchero Software, LLC. All rights reserved.
 //
 
-#import <AppKit/AppKit.h>
+@import Foundation;
 
 //! Project version number for RSTree.
 FOUNDATION_EXPORT double RSTreeVersionNumber;
