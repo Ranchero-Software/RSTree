@@ -101,13 +101,15 @@ public final class Node: Hashable {
 	}
 	
 	public func childNodeRepresentingObject(_ obj: AnyObject) -> Node? {
-
 		return findNodeRepresentingObject(obj, recursively: false)
 	}
 
 	public func descendantNodeRepresentingObject(_ obj: AnyObject) -> Node? {
-
 		return findNodeRepresentingObject(obj, recursively: true)
+	}
+
+	public func descendantNode(where test: (Node) -> Bool) -> Node? {
+		return findNode(where: test, recursively: true)
 	}
 
 	public func hasAncestor(in nodes: [Node]) -> Bool {
@@ -204,4 +206,19 @@ private extension Node {
 
 		return nil
 	}
+
+	func findNode(where test: (Node) -> Bool, recursively: Bool = false) -> Node? {
+
+		for childNode in childNodes {
+			if test(childNode) {
+				return childNode
+			}
+			if recursively, let foundNode = childNode.findNode(where: test) {
+				return foundNode
+			}
+		}
+
+		return nil
+	}
+
 }
