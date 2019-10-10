@@ -133,6 +133,7 @@
 				842A0BDD1CFCB9BC00BF746C /* Frameworks */,
 				842A0BDE1CFCB9BC00BF746C /* Headers */,
 				842A0BDF1CFCB9BC00BF746C /* Resources */,
+				51C8F345234FB02E0048ED95 /* Run Script: Verify No Build Settings */,
 			);
 			buildRules = (
 			);
@@ -173,11 +174,15 @@
 				TargetAttributes = {
 					842A0BE01CFCB9BC00BF746C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SHJK2V3AJG;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					842A0BEA1CFCB9BC00BF746C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SHJK2V3AJG;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -217,6 +222,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51C8F345234FB02E0048ED95 /* Run Script: Verify No Build Settings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Verify No Build Settings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcrun -sdk macosx swiftc -target x86_64-macosx10.11  buildscripts/VerifyNoBuildSettings.swift -o $CONFIGURATION_TEMP_DIR/VerifyNoBS\n$CONFIGURATION_TEMP_DIR/VerifyNoBS ${PROJECT_NAME}.xcodeproj/project.pbxproj\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		842A0BDC1CFCB9BC00BF746C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,7 +279,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D511EF1E20242EC900712EC3 /* RSTree_project_debug.xcconfig */;
 			buildSettings = {
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 			};
 			name = Debug;
 		};
@@ -261,7 +286,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D511EF1F20242EC900712EC3 /* RSTree_project_release.xcconfig */;
 			buildSettings = {
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 			};
 			name = Release;
 		};
