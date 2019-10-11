@@ -32,4 +32,4 @@ jobs:
     - name: Run Build
       env:
         destination: ${{ matrix.destination }}
-      run: xcodebuild -scheme RSTree -destination "${destination}" -showBuildTimingSummary CODE_SIGN_IDENTITY=
+      run: xcodebuild -scheme RSTree test -destination "${destination}" -showBuildTimingSummary CODE_SIGN_IDENTITY=
