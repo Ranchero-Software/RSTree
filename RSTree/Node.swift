@@ -214,7 +214,7 @@ private extension Node {
 			if test(childNode) {
 				return childNode
 			}
-			if recursively, let foundNode = childNode.findNode(where: test) {
+			if recursively, let foundNode = childNode.findNode(where: test, recursively: recursively) {
 				return foundNode
 			}
 		}
