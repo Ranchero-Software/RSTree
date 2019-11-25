@@ -16,7 +16,6 @@ public final class Node: Hashable {
 	public let representedObject: AnyObject
 	public var canHaveChildNodes = false
 	public var isGroupItem = false
-	public var isExpanded = false
 	public var childNodes = [Node]()
 	public let uniqueID: Int
 	private static var incrementingID = 0
