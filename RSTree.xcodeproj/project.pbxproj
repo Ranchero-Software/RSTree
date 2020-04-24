@@ -28,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		518B2EAC2351375700400001 /* RSTree_project_test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RSTree_project_test.xcconfig; sourceTree = "<group>"; };
 		842A0BE11CFCB9BC00BF746C /* RSTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A0BE41CFCB9BC00BF746C /* RSTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RSTree.h; path = RSTree/RSTree.h; sourceTree = "<group>"; };
 		842A0BE61CFCB9BC00BF746C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RSTree/Info.plist; sourceTree = "<group>"; };
@@ -105,7 +104,6 @@
 			children = (
 				D511EF1C20242EC900712EC3 /* RSTree_project.xcconfig */,
 				D511EF1E20242EC900712EC3 /* RSTree_project_debug.xcconfig */,
-				518B2EAC2351375700400001 /* RSTree_project_test.xcconfig */,
 				D511EF1F20242EC900712EC3 /* RSTree_project_release.xcconfig */,
 				D511EF1D20242EC900712EC3 /* RSTree_target.xcconfig */,
 				D511EF1B20242EC900712EC3 /* RSTreeTests_target.xcconfig */,
@@ -277,27 +275,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		51EC8946235120A70061B6F6 /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 518B2EAC2351375700400001 /* RSTree_project_test.xcconfig */;
-			buildSettings = {
-			};
-			name = Test;
-		};
-		51EC8947235120A70061B6F6 /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D511EF1D20242EC900712EC3 /* RSTree_target.xcconfig */;
-			buildSettings = {
-			};
-			name = Test;
-		};
-		51EC8948235120A70061B6F6 /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D511EF1B20242EC900712EC3 /* RSTreeTests_target.xcconfig */;
-			buildSettings = {
-			};
-			name = Test;
-		};
 		842A0BF31CFCB9BC00BF746C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D511EF1E20242EC900712EC3 /* RSTree_project_debug.xcconfig */;
@@ -347,7 +324,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842A0BF31CFCB9BC00BF746C /* Debug */,
-				51EC8946235120A70061B6F6 /* Test */,
 				842A0BF41CFCB9BC00BF746C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -357,7 +333,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842A0BF61CFCB9BC00BF746C /* Debug */,
-				51EC8947235120A70061B6F6 /* Test */,
 				842A0BF71CFCB9BC00BF746C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -367,7 +342,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842A0BF91CFCB9BC00BF746C /* Debug */,
-				51EC8948235120A70061B6F6 /* Test */,
 				842A0BFA1CFCB9BC00BF746C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
