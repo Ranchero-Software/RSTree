@@ -9,6 +9,9 @@ let package = Package(
             type: .dynamic,
             targets: ["RSTree"]),
     ],
+    // dependencies = [
+    //     .package(url: "https://github.com/apple/swift-docc-plugin", branch: "main"),
+    // ]
     targets: [
         .target(
             name: "RSTree",
