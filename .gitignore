@@ -6,6 +6,7 @@
 .build/
 build/
 DerivedData/
+Sources/RSTree/Documentation.docc/.docc-build/
 
 ## Various settings
 *.pbxuser
